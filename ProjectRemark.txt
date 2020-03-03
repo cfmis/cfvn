@@ -1,0 +1,39 @@
+﻿
+項目備註：
+一窗體繼承及設置調用屬性
+  繼承：
+  設計好窗體后最后一步需更改如下代碼：
+  public partial class frmBsCustomer : Form  -->  public partial class frmBsCustomer : DockContent
+  否則此窗體將不會出現在主窗體控件容器中
+  調用屬性：
+  窗體Tag屬性需設置窗體的相對路徑，以供主程序調用
+  例如窗體Tag：Forms.frmBsCustomer
+
+二.菜單及多語言
+   項目支持三種語言：1--簡體中文（）; 2--英文; 3--繁體中文.
+
+三.菜單、窗體及多語言標簽操作先后順序及方法：
+
+	1）.【數據字典】窗體界面中添加各種簽翻譯.
+	    命名方法：菜單項: M_XXXXXX,
+		         toolStrip1控件中的button控件、窗體中button控件數據字典直接添加翻譯即可，翻譯代號為button控件的Name。
+				 窗體標簽控件翻譯代號以 t_xxxxxx 命名
+				 存放翻譯標簽代號位置：
+				      lable控件                             -->  Tag,
+				      groupBox控件                          -->  Tag,
+				      tabControl中的 tabPage1控件           -->  Tag,
+			          Dev GridControl中gridView中的列標題   -->  Tag
+				      DataGridView控件中的列標題            -->  ToolTipText, 而且需設置DataGridView-->ShowCellToolTips-->False
+			   
+	2）.【窗件對應按鈕控件列表】窗體界面中添加好某窗體按鈕控件（toolStrip1）列表
+		輸入窗件相對路徑后按【自动添加窗体工具栏按钮】即可自動添加按鈕列表，因權限列表需參照此處查找出某窗體的按鈕列表
+	
+	3）.【功能菜單】窗體界面中添加各菜單項
+
+	以下需按 1）--> 2）--> 3）的順序來操作
+
+四.權限
+   以組別為導向，即先建立用戶所屬組別，再往組別里添加用戶，通常分配權限可以給組別分配權限便可，也可以對組別之下個別用戶
+   個某個模塊精確地分配權限。用戶權限查找順序：用戶權限-->組別權限。即用戶權限優先于組別權限，如沒有用戶權限，則取用戶
+   所屬組別權限作當作此用戶的權限。
+

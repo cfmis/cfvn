@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="09/21/2019 09:37:39" ReportInfo.Modified="09/26/2019 17:54:51" ReportInfo.CreatorVersion="2019.1.15.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpudw83PWAxXUGKDw150SD2nacKGnK5/5UGwZPOHR1QNEmW">
+      <TableDataSource Name="myCountry" DataType="System.Int32" Enabled="true" TableName="myCountry">
+        <Column Name="id" DataType="System.String"/>
+        <Column Name="name" DataType="System.String"/>
+        <Column Name="english_name" DataType="System.String"/>
+        <Column Name="create_by" Enabled="false" DataType="System.String" PropName="Column"/>
+      </TableDataSource>
+    </XmlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="SimSun, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2"/>
+    <PageHeaderBand Name="PageHeader1" Top="4" Width="718.2" Height="89.4">
+      <TextObject Name="Text2" Left="75.6" Top="59.25" Width="94.5" Height="14.9" Text="Country ID" Font="SimSun, 9pt, style=Bold"/>
+      <TextObject Name="Text4" Left="179.55" Top="59.25" Width="151.2" Height="14.9" Text="Name" Font="SimSun, 9pt, style=Bold"/>
+      <TextObject Name="Text6" Left="340.2" Top="59.25" Width="94.5" Height="14.9" Text="Name English" Font="SimSun, 9pt, style=Bold"/>
+      <TextObject Name="Text8" Left="25.35" Top="59.25" Width="47.25" Height="14.9" Text="No." Font="SimSun, 9pt, style=Bold"/>
+      <TextObject Name="Text9" Left="207.9" Top="22.9" Width="245.7" Height="24.35" Text="Country Information" VertAlign="Center" Font="SimSun, 14.25pt, style=Bold"/>
+      <LineObject Name="Line1" Left="27.45" Top="51.25" Width="647.89" Border.Width="2" Diagonal="true"/>
+      <LineObject Name="Line2" Left="27.45" Top="81.05" Width="647.95" Border.Width="2" Diagonal="true"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="97.4" Width="718.2" Height="28.35" DataSource="myCountry">
+      <TextObject Name="Text1" Left="75.6" Width="94.5" Height="18.9" Text="[myCountry.id]" Font="SimSun, 9pt"/>
+      <TextObject Name="Text3" Left="179.55" Width="151.2" Height="18.9" Text="[myCountry.name]" Font="SimSun, 9pt"/>
+      <TextObject Name="Text5" Left="340.2" Width="160.65" Height="18.9" Text="[myCountry.english_name]" Font="SimSun, 9pt"/>
+      <TextObject Name="Text7" Left="21.35" Width="45.7" Height="18.9" Text="[Row#]" Font="SimSun, 9pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="129.75" Width="718.2" Height="37.8">
+      <LineObject Name="Line3" Left="28.35" Width="647.95" Border.Width="2" Diagonal="true"/>
+      <TextObject Name="Text12" Left="245.7" Top="3.45" Width="93.05" Height="13.45" Text="Page [Page#] of [TotalPages#]" WordWrap="false" Font="SimSun, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
