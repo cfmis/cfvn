@@ -23,7 +23,7 @@ namespace cfvn.Forms
         public string m_state = ""; //新增或編號的狀態        
         public static string str_language = "0";
         public string m_msg_custom;
-        public bool m_save_flag; 
+        public bool m_save_flag;        
         public BindingSource bds_h = new BindingSource();
         public static BindingSource bds_d = new BindingSource();
 
@@ -36,6 +36,7 @@ namespace cfvn.Forms
         readonly MsgInfo myMsg = new MsgInfo();//實例化Messagegox用到的提示 
         public clsPublicOfVN clsApp = new clsPublicOfVN();
         public clsAppPublic objApp = new clsAppPublic();
+        
 
         clsToolBar objToolbar;
 
@@ -348,7 +349,7 @@ namespace cfvn.Forms
             int num = clsApp.ExecuteNonQuery(strSql, paras, false);
             if (num > 0)
             {
-                luestate.EditValue = state;                
+                luestate.EditValue = state;
             }
         }
 
@@ -1004,6 +1005,68 @@ namespace cfvn.Forms
             }
         }
 
-        
+        private void luestate_EditValueChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(luestate.Text))
+            {
+                SetButton_ApproveSatus(luestate.EditValue.ToString());
+            }
+        }
+
+        private void SetButton_ApproveSatus(string state)
+        {
+            string ls_image_file = "";
+            string ls_image_path = AppDomain.CurrentDomain.BaseDirectory;
+
+            switch (state)
+            {
+                case "0":
+                    luestate.EditValue = "0";//txtState.Text = "未批準";
+                    if (DBUtility._language == "2")
+                        BTNAPPROVE.Text = "Approve(&Y)";
+                    else
+                    {
+                        BTNAPPROVE.Text = "批準(&Y)";
+                        BTNAPPROVE.Tag = "0";
+                    }
+                    ls_image_file = ls_image_path + "Images\\p_ok.png";
+                    if (File.Exists(ls_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(ls_image_file);
+                    }
+                    break;
+                case "1":
+                    luestate.EditValue = "1"; // txtState.Text = "已批準";
+                    if (DBUtility._language == "2")
+                        BTNAPPROVE.Text = "Un Approve(&Y)";
+                    else
+                    {
+                        BTNAPPROVE.Text = "反批準(&Y)";
+                        BTNAPPROVE.Tag = "1";
+                    }
+                    ls_image_file = ls_image_path + "Images\\p_unok.png";
+                    if (File.Exists(ls_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(ls_image_file);
+                    }
+                    break;
+                case "2":
+                    luestate.EditValue = "2"; // txtState.Text = "已注銷狀態";
+                    if (DBUtility._language == "2")
+                        BTNAPPROVE.Text = "Logout(&Y)";
+                    else
+                    {
+                        BTNAPPROVE.Text = "註銷(&Y)";
+                        BTNAPPROVE.Tag = "2";
+                    }
+                    ls_image_file = ls_image_path + "Images\\p_ok.png";
+                    if (File.Exists(ls_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(ls_image_file);
+                    }
+                    BTNAPPROVE.Enabled = false;
+                    break;
+            }
+        }
     }
 }

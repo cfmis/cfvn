@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTempReceipt));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BTNEXIT = new System.Windows.Forms.ToolStripButton();
@@ -630,6 +630,7 @@
             this.luestate.Size = new System.Drawing.Size(139, 20);
             this.luestate.TabIndex = 43;
             this.luestate.Tag = "2";
+            this.luestate.EditValueChanged += new System.EventHandler(this.luestate_EditValueChanged);
             // 
             // gridControl1
             // 
@@ -1572,9 +1573,9 @@
             // s_qty1
             // 
             this.s_qty1.DataPropertyName = "s_qty";
-            dataGridViewCellStyle9.Format = "N2";
-            dataGridViewCellStyle9.NullValue = null;
-            this.s_qty1.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Format = "N2";
+            dataGridViewCellStyle1.NullValue = null;
+            this.s_qty1.DefaultCellStyle = dataGridViewCellStyle1;
             this.s_qty1.HeaderText = "訂單數量";
             this.s_qty1.Name = "s_qty1";
             this.s_qty1.ReadOnly = true;
@@ -1592,9 +1593,9 @@
             // receipt_qty1
             // 
             this.receipt_qty1.DataPropertyName = "temp_qty";
-            dataGridViewCellStyle10.Format = "N2";
-            dataGridViewCellStyle10.NullValue = null;
-            this.receipt_qty1.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Format = "N2";
+            dataGridViewCellStyle2.NullValue = null;
+            this.receipt_qty1.DefaultCellStyle = dataGridViewCellStyle2;
             this.receipt_qty1.HeaderText = "收貨數量";
             this.receipt_qty1.Name = "receipt_qty1";
             this.receipt_qty1.ReadOnly = true;
