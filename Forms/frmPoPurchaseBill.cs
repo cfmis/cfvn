@@ -42,8 +42,8 @@ namespace cfvn.Forms
         public DataTable dtFareid = new DataTable();
 
         readonly MsgInfo myMsg = new MsgInfo();//實例化Messagegox用到的提示
-        string strFileImag = "";
-        readonly string strImgPath = AppDomain.CurrentDomain.BaseDirectory;
+        string m_image_file = "";
+        string m_image_path = AppDomain.CurrentDomain.BaseDirectory;
         public clsPublicOfVN clsApp = new clsPublicOfVN();
         public clsAppPublic objApp = new clsAppPublic();
 
@@ -296,14 +296,14 @@ namespace cfvn.Forms
         {
             if (luestate.EditValue.ToString() == "0")
             {
-                ApproveState("1"); //批準
+                ApproveState("1"); //批準單據操作
                 //luestate.EditValue = "1";
                 return;
             }
 
             if (luestate.EditValue.ToString() == "1")
             {
-                ApproveState("0");//反批準
+                ApproveState("0");//反批準單據操作
                 //luestate.EditValue = "0";
             }
         }   
@@ -323,6 +323,13 @@ namespace cfvn.Forms
                 MessageBox.Show(clsCommon.GetTitle("t_ check_is_can_delete"), myMsg.msgTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+            if (luestate.EditValue.ToString() == "9")
+            {
+                //單據收貨已完成狀態,不可以刪除!
+                MessageBox.Show(clsCommon.GetTitle("t_ check_is_can_delete_completed_status"), myMsg.msgTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
             DialogResult dialogResult = MessageBox.Show(myMsg.msgIsDelete, myMsg.msgTitle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialogResult == DialogResult.Yes)
             {
@@ -344,18 +351,25 @@ namespace cfvn.Forms
             {
                 if (BTNAPPROVE.Tag.ToString() == "1")
                 {
-                    //已批準狀態,不可以編輯!
+                    //已批準狀態,不可以再編輯!
                     MessageBox.Show(clsCommon.GetTitle("t_ check_is_can_edit"), myMsg.msgTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
                 if (BTNAPPROVE.Tag.ToString() == "2")
                 {
-                    //注銷狀態,不可以編輯!
+                    //注銷狀態,不可以再編輯!
                     MessageBox.Show(clsCommon.GetTitle("t_ check_is_can_cancel"), myMsg.msgTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     return;
                 }
-                                  
-               objToolbar.Set_Button_Enable_Status(toolStrip1, false);
+
+                if (BTNAPPROVE.Tag.ToString() == "9")
+                {
+                    //收貨完成狀態,不可以再編輯!
+                    MessageBox.Show(clsCommon.GetTitle("t_ check_is_delivery_completed"), myMsg.msgTitle, MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+
+                objToolbar.Set_Button_Enable_Status(toolStrip1, false);
                objToolbar.SetToolBar();
                SetObjValue.SetEditBackColor(tabPoPurchase.TabPages[0].Controls, true);
                Set_Grid_Status(true);
@@ -834,14 +848,12 @@ namespace cfvn.Forms
             int num = clsApp.ExecuteNonQuery(strSql, paras, false);
             if (num > 0)
             {
-                luestate.EditValue = state;
-                //SetButton_ApproveSatus(state);
+                luestate.EditValue = state;               
             }
         }
 
         private void SetButton_ApproveSatus(string state)
-        {
-            strFileImag = "";
+        {                   
             switch (state)
             {
                 case "0":
@@ -849,12 +861,14 @@ namespace cfvn.Forms
                     if (DBUtility._language == "2")
                         BTNAPPROVE.Text = "Approve(&Y)";
                     else
-                        BTNAPPROVE.Text = "批準(&Y)";
-                    //BTNAPPROVE.Tag = "0";
-                    strFileImag = strImgPath + "Images\\p_ok.png";
-                    if (File.Exists(strFileImag))
                     {
-                        BTNAPPROVE.Image = Image.FromFile(strFileImag);
+                        BTNAPPROVE.Text = "批準(&Y)";
+                        BTNAPPROVE.Tag = "0";
+                    }
+                    m_image_file = m_image_path + "Images\\p_ok.png";
+                    if (File.Exists(m_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(m_image_file);
                     }
                     break;
                 case "1":
@@ -862,39 +876,45 @@ namespace cfvn.Forms
                     if (DBUtility._language == "2")
                         BTNAPPROVE.Text = "Un Approve(&Y)";
                     else
-                        BTNAPPROVE.Text = "反批準(&Y)";
-                    //BTNAPPROVE.Tag = "1";
-                    strFileImag = strImgPath + "Images\\p_unok.png";
-                    if (File.Exists(strFileImag))
                     {
-                        BTNAPPROVE.Image = Image.FromFile(strFileImag);
+                        BTNAPPROVE.Text = "反批準(&Y)";
+                        BTNAPPROVE.Tag = "1";
+                    }
+                    m_image_file = m_image_path + "Images\\p_unok.png";
+                    if (File.Exists(m_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(m_image_file);
                     }
                     break;
                 case "2":
-                    luestate.EditValue = "2"; // txtState.Text = "已批準";
+                    luestate.EditValue = "2"; // "已注銷";
                     if (DBUtility._language == "2")
                         BTNAPPROVE.Text = "Approve(&Y)";
                     else
-                        BTNAPPROVE.Text = "批準(&Y)";
-                    //BTNAPPROVE.Tag = "2";
-                    strFileImag = strImgPath + "Images\\p_ok.png";
-                    if (File.Exists(strFileImag))
                     {
-                        BTNAPPROVE.Image = Image.FromFile(strFileImag);
+                        BTNAPPROVE.Text = "批準(&Y)";
+                        BTNAPPROVE.Tag = "2";
+                    }
+                    m_image_file = m_image_path + "Images\\p_ok.png";
+                    if (File.Exists(m_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(m_image_file);
                     }
                     BTNAPPROVE.Enabled = false;
                     break;
                 case "9":
-                    luestate.EditValue = "9"; // "送貨完成";
+                    luestate.EditValue = "9"; // "收貨完成";
                     if (DBUtility._language == "2")
-                        BTNAPPROVE.Text = "Un Approve(&Y)";
+                        BTNAPPROVE.Text = "Approve(&Y)";
                     else
-                        BTNAPPROVE.Text = "反批準(&Y)";
-                    //BTNAPPROVE.Tag = "9";
-                    strFileImag = strImgPath + "Images\\p_unok.png";
-                    if (File.Exists(strFileImag))
                     {
-                        BTNAPPROVE.Image = Image.FromFile(strFileImag);
+                        BTNAPPROVE.Text = "批準(&Y)";
+                        BTNAPPROVE.Tag = "9";
+                    }
+                    m_image_file = m_image_path + "Images\\p_ok.png";
+                    if (File.Exists(m_image_file))
+                    {
+                        BTNAPPROVE.Image = Image.FromFile(m_image_file);
                     }
                     BTNAPPROVE.Enabled = false;
                     break;
