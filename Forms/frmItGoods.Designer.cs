@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmItGoods));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnExit = new System.Windows.Forms.ToolStripButton();
@@ -990,7 +990,7 @@
             this.bteId.Name = "bteId";
             this.bteId.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.bteId.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis, "", 20, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.bteId.Properties.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.bteId.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.bteId.Size = new System.Drawing.Size(415, 22);
@@ -1725,9 +1725,9 @@
             // scrap_sec_qty
             // 
             this.scrap_sec_qty.DataPropertyName = "scrap_sec_qty";
-            dataGridViewCellStyle2.Format = "N5";
-            dataGridViewCellStyle2.NullValue = "0";
-            this.scrap_sec_qty.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Format = "N5";
+            dataGridViewCellStyle1.NullValue = "0";
+            this.scrap_sec_qty.DefaultCellStyle = dataGridViewCellStyle1;
             this.scrap_sec_qty.HeaderText = "廢料重量";
             this.scrap_sec_qty.Name = "scrap_sec_qty";
             this.scrap_sec_qty.ReadOnly = true;
@@ -1931,6 +1931,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Name = "frmItGoods";
+            this.Tag = "Forms.frmItGoods";
             this.Text = "frmItGoods";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmItGoods_FormClosed);
             this.Load += new System.EventHandler(this.frmItGoods_Load);

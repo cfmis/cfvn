@@ -277,7 +277,7 @@
             this.po_ver.OptionsColumn.AllowSort = DevExpress.Utils.DefaultBoolean.False;
             this.po_ver.OptionsFilter.AllowAutoFilter = false;
             this.po_ver.OptionsFilter.AllowFilter = false;
-            this.po_ver.Tag = "t_ver";
+            this.po_ver.Tag = "t_version";
             this.po_ver.Visible = true;
             this.po_ver.VisibleIndex = 6;
             this.po_ver.Width = 47;

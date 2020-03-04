@@ -353,7 +353,7 @@
             this.tabPoPurchase.Controls.Add(this.tabPage2);
             this.tabPoPurchase.Font = new System.Drawing.Font("PMingLiU", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.tabPoPurchase.ImageList = this.myImageList;
-            this.tabPoPurchase.Location = new System.Drawing.Point(3, 40);
+            this.tabPoPurchase.Location = new System.Drawing.Point(3, 37);
             this.tabPoPurchase.Name = "tabPoPurchase";
             this.tabPoPurchase.SelectedIndex = 0;
             this.tabPoPurchase.Size = new System.Drawing.Size(1150, 690);
@@ -460,7 +460,7 @@
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(556, 294);
+            this.label29.Location = new System.Drawing.Point(556, 273);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(406, 16);
             this.label29.TabIndex = 264;
@@ -471,7 +471,7 @@
             // 
             this.txtm_rate.Enabled = false;
             this.txtm_rate.EnterMoveNextControl = true;
-            this.txtm_rate.Location = new System.Drawing.Point(983, 70);
+            this.txtm_rate.Location = new System.Drawing.Point(983, 65);
             this.txtm_rate.Name = "txtm_rate";
             this.txtm_rate.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtm_rate.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -491,7 +491,7 @@
             // 
             this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl2.Location = new System.Drawing.Point(2, 546);
+            this.gridControl2.Location = new System.Drawing.Point(2, 552);
             this.gridControl2.MainView = this.dgvFare;
             this.gridControl2.Name = "gridControl2";
             this.gridControl2.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -501,7 +501,7 @@
             this.col_fare_sum,
             this.col_fare_goods_id,
             this.col_fare_unit_code});
-            this.gridControl2.Size = new System.Drawing.Size(1135, 108);
+            this.gridControl2.Size = new System.Drawing.Size(1135, 103);
             this.gridControl2.TabIndex = 42;
             this.gridControl2.Tag = "2";
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -747,7 +747,7 @@
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(735, 181);
+            this.label27.Location = new System.Drawing.Point(735, 172);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(105, 17);
             this.label27.TabIndex = 262;
@@ -759,7 +759,7 @@
             // 
             this.txttotal_sum.Enabled = false;
             this.txttotal_sum.EnterMoveNextControl = true;
-            this.txttotal_sum.Location = new System.Drawing.Point(843, 180);
+            this.txttotal_sum.Location = new System.Drawing.Point(843, 170);
             this.txttotal_sum.Name = "txttotal_sum";
             this.txttotal_sum.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txttotal_sum.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -773,7 +773,7 @@
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(470, 181);
+            this.label28.Location = new System.Drawing.Point(470, 172);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(105, 17);
             this.label28.TabIndex = 260;
@@ -785,7 +785,7 @@
             // 
             this.txttack_fare.Enabled = false;
             this.txttack_fare.EnterMoveNextControl = true;
-            this.txttack_fare.Location = new System.Drawing.Point(578, 180);
+            this.txttack_fare.Location = new System.Drawing.Point(578, 170);
             this.txttack_fare.Name = "txttack_fare";
             this.txttack_fare.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txttack_fare.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -799,7 +799,7 @@
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(735, 160);
+            this.label26.Location = new System.Drawing.Point(735, 151);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(105, 17);
             this.label26.TabIndex = 258;
@@ -811,7 +811,7 @@
             // 
             this.txtdisc_spare.Enabled = false;
             this.txtdisc_spare.EnterMoveNextControl = true;
-            this.txtdisc_spare.Location = new System.Drawing.Point(843, 158);
+            this.txtdisc_spare.Location = new System.Drawing.Point(843, 149);
             this.txtdisc_spare.Name = "txtdisc_spare";
             this.txtdisc_spare.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtdisc_spare.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -825,7 +825,7 @@
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(470, 160);
+            this.label25.Location = new System.Drawing.Point(470, 151);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(105, 17);
             this.label25.TabIndex = 256;
@@ -837,7 +837,7 @@
             // 
             this.txtpg_sum.Enabled = false;
             this.txtpg_sum.EnterMoveNextControl = true;
-            this.txtpg_sum.Location = new System.Drawing.Point(578, 158);
+            this.txtpg_sum.Location = new System.Drawing.Point(578, 149);
             this.txtpg_sum.Name = "txtpg_sum";
             this.txtpg_sum.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtpg_sum.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -851,9 +851,9 @@
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(735, 137);
+            this.label24.Location = new System.Drawing.Point(735, 132);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(105, 17);
+            this.label24.Size = new System.Drawing.Size(105, 14);
             this.label24.TabIndex = 254;
             this.label24.Tag = "t_tax_sum";
             this.label24.Text = "稅款總額";
@@ -861,9 +861,9 @@
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(470, 137);
+            this.label23.Location = new System.Drawing.Point(470, 132);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(105, 17);
+            this.label23.Size = new System.Drawing.Size(105, 14);
             this.label23.TabIndex = 253;
             this.label23.Tag = "t_price_condition";
             this.label23.Text = "價格條件";
@@ -874,7 +874,7 @@
             this.luepc_id.EditValue = "";
             this.luepc_id.Enabled = false;
             this.luepc_id.EnterMoveNextControl = true;
-            this.luepc_id.Location = new System.Drawing.Point(578, 136);
+            this.luepc_id.Location = new System.Drawing.Point(578, 128);
             this.luepc_id.Name = "luepc_id";
             this.luepc_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luepc_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -898,7 +898,7 @@
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(735, 115);
+            this.label22.Location = new System.Drawing.Point(735, 108);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(105, 17);
             this.label22.TabIndex = 251;
@@ -911,7 +911,7 @@
             this.luetax_ticket.EditValue = "";
             this.luetax_ticket.Enabled = false;
             this.luetax_ticket.EnterMoveNextControl = true;
-            this.luetax_ticket.Location = new System.Drawing.Point(843, 114);
+            this.luetax_ticket.Location = new System.Drawing.Point(843, 107);
             this.luetax_ticket.Name = "luetax_ticket";
             this.luetax_ticket.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luetax_ticket.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -935,7 +935,7 @@
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(470, 115);
+            this.label21.Location = new System.Drawing.Point(470, 108);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(105, 17);
             this.label21.TabIndex = 249;
@@ -948,7 +948,7 @@
             this.luearea.EditValue = "";
             this.luearea.Enabled = false;
             this.luearea.EnterMoveNextControl = true;
-            this.luearea.Location = new System.Drawing.Point(578, 114);
+            this.luearea.Location = new System.Drawing.Point(578, 107);
             this.luearea.Name = "luearea";
             this.luearea.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luearea.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -973,7 +973,7 @@
             // label20
             // 
             this.label20.ForeColor = System.Drawing.Color.Blue;
-            this.label20.Location = new System.Drawing.Point(763, 93);
+            this.label20.Location = new System.Drawing.Point(763, 87);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(78, 17);
             this.label20.TabIndex = 247;
@@ -986,7 +986,7 @@
             this.luedepartment_id.EditValue = "";
             this.luedepartment_id.Enabled = false;
             this.luedepartment_id.EnterMoveNextControl = true;
-            this.luedepartment_id.Location = new System.Drawing.Point(843, 92);
+            this.luedepartment_id.Location = new System.Drawing.Point(843, 86);
             this.luedepartment_id.Name = "luedepartment_id";
             this.luedepartment_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luedepartment_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1010,7 +1010,7 @@
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(470, 93);
+            this.label19.Location = new System.Drawing.Point(470, 87);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(105, 17);
             this.label19.TabIndex = 245;
@@ -1023,7 +1023,7 @@
             this.luefinally_buyer.EditValue = "";
             this.luefinally_buyer.Enabled = false;
             this.luefinally_buyer.EnterMoveNextControl = true;
-            this.luefinally_buyer.Location = new System.Drawing.Point(578, 92);
+            this.luefinally_buyer.Location = new System.Drawing.Point(578, 86);
             this.luefinally_buyer.Name = "luefinally_buyer";
             this.luefinally_buyer.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luefinally_buyer.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1051,7 +1051,7 @@
             this.luem_id.EditValue = "";
             this.luem_id.Enabled = false;
             this.luem_id.EnterMoveNextControl = true;
-            this.luem_id.Location = new System.Drawing.Point(578, 70);
+            this.luem_id.Location = new System.Drawing.Point(578, 65);
             this.luem_id.Name = "luem_id";
             this.luem_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luem_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1079,7 +1079,7 @@
             // label18
             // 
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(470, 71);
+            this.label18.Location = new System.Drawing.Point(470, 66);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(105, 17);
             this.label18.TabIndex = 242;
@@ -1090,7 +1090,7 @@
             // txtl_phone
             // 
             this.txtl_phone.EnterMoveNextControl = true;
-            this.txtl_phone.Location = new System.Drawing.Point(578, 48);
+            this.txtl_phone.Location = new System.Drawing.Point(578, 44);
             this.txtl_phone.Name = "txtl_phone";
             this.txtl_phone.Properties.MaxLength = 100;
             this.txtl_phone.Properties.ReadOnly = true;
@@ -1100,7 +1100,7 @@
             // 
             // lbllinkman
             // 
-            this.lbllinkman.Location = new System.Drawing.Point(470, 49);
+            this.lbllinkman.Location = new System.Drawing.Point(470, 45);
             this.lbllinkman.Name = "lbllinkman";
             this.lbllinkman.Size = new System.Drawing.Size(105, 17);
             this.lbllinkman.TabIndex = 241;
@@ -1111,7 +1111,7 @@
             // txtfax
             // 
             this.txtfax.EnterMoveNextControl = true;
-            this.txtfax.Location = new System.Drawing.Point(843, 48);
+            this.txtfax.Location = new System.Drawing.Point(843, 44);
             this.txtfax.Name = "txtfax";
             this.txtfax.Properties.MaxLength = 100;
             this.txtfax.Properties.ReadOnly = true;
@@ -1121,7 +1121,7 @@
             // 
             // lblfax
             // 
-            this.lblfax.Location = new System.Drawing.Point(766, 49);
+            this.lblfax.Location = new System.Drawing.Point(766, 45);
             this.lblfax.Name = "lblfax";
             this.lblfax.Size = new System.Drawing.Size(76, 17);
             this.lblfax.TabIndex = 240;
@@ -1132,7 +1132,7 @@
             // label17
             // 
             this.label17.ForeColor = System.Drawing.Color.Blue;
-            this.label17.Location = new System.Drawing.Point(784, 27);
+            this.label17.Location = new System.Drawing.Point(784, 24);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(58, 17);
             this.label17.TabIndex = 236;
@@ -1145,7 +1145,7 @@
             this.luetype.EditValue = "";
             this.luetype.Enabled = false;
             this.luetype.EnterMoveNextControl = true;
-            this.luetype.Location = new System.Drawing.Point(843, 26);
+            this.luetype.Location = new System.Drawing.Point(843, 23);
             this.luetype.Name = "luetype";
             this.luetype.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.luetype.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1171,7 +1171,7 @@
             this.lueorigin_id.EditValue = "";
             this.lueorigin_id.Enabled = false;
             this.lueorigin_id.EnterMoveNextControl = true;
-            this.lueorigin_id.Location = new System.Drawing.Point(578, 4);
+            this.lueorigin_id.Location = new System.Drawing.Point(578, 2);
             this.lueorigin_id.Name = "lueorigin_id";
             this.lueorigin_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.lueorigin_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1195,7 +1195,7 @@
             // label16
             // 
             this.label16.ForeColor = System.Drawing.Color.Blue;
-            this.label16.Location = new System.Drawing.Point(470, 6);
+            this.label16.Location = new System.Drawing.Point(470, 4);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(105, 17);
             this.label16.TabIndex = 233;
@@ -1205,7 +1205,7 @@
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(473, 201);
+            this.label15.Location = new System.Drawing.Point(473, 191);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(103, 17);
             this.label15.TabIndex = 232;
@@ -1215,7 +1215,7 @@
             // 
             // memship_mark
             // 
-            this.memship_mark.Location = new System.Drawing.Point(578, 201);
+            this.memship_mark.Location = new System.Drawing.Point(578, 191);
             this.memship_mark.Name = "memship_mark";
             this.memship_mark.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(247)))));
             this.memship_mark.Properties.Appearance.Options.UseBackColor = true;
@@ -1223,13 +1223,13 @@
             this.memship_mark.Properties.AppearanceDisabled.Options.UseForeColor = true;
             this.memship_mark.Properties.LinesCount = 3;
             this.memship_mark.Properties.ReadOnly = true;
-            this.memship_mark.Size = new System.Drawing.Size(403, 41);
+            this.memship_mark.Size = new System.Drawing.Size(403, 37);
             this.memship_mark.TabIndex = 32;
             this.memship_mark.Tag = "2";
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(3, 201);
+            this.label14.Location = new System.Drawing.Point(3, 191);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(78, 17);
             this.label14.TabIndex = 230;
@@ -1239,21 +1239,21 @@
             // 
             // memside_mark
             // 
-            this.memside_mark.Location = new System.Drawing.Point(83, 201);
+            this.memside_mark.Location = new System.Drawing.Point(83, 191);
             this.memside_mark.Name = "memside_mark";
             this.memside_mark.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.memside_mark.Properties.AppearanceDisabled.Options.UseForeColor = true;
             this.memside_mark.Properties.LinesCount = 3;
             this.memside_mark.Properties.ReadOnly = true;
-            this.memside_mark.Size = new System.Drawing.Size(369, 41);
+            this.memside_mark.Size = new System.Drawing.Size(369, 37);
             this.memside_mark.TabIndex = 33;
             this.memside_mark.Tag = "2";
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(225, 160);
+            this.label13.Location = new System.Drawing.Point(225, 151);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 14);
+            this.label13.Size = new System.Drawing.Size(88, 17);
             this.label13.TabIndex = 228;
             this.label13.Tag = "t_seller_id";
             this.label13.Text = "銷售員";
@@ -1264,7 +1264,7 @@
             this.luesales_person.EditValue = "";
             this.luesales_person.Enabled = false;
             this.luesales_person.EnterMoveNextControl = true;
-            this.luesales_person.Location = new System.Drawing.Point(318, 158);
+            this.luesales_person.Location = new System.Drawing.Point(318, 149);
             this.luesales_person.Name = "luesales_person";
             this.luesales_person.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.luesales_person.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1287,7 +1287,7 @@
             // 
             // lblpayment_mode
             // 
-            this.lblpayment_mode.Location = new System.Drawing.Point(225, 140);
+            this.lblpayment_mode.Location = new System.Drawing.Point(225, 132);
             this.lblpayment_mode.Name = "lblpayment_mode";
             this.lblpayment_mode.Size = new System.Drawing.Size(88, 14);
             this.lblpayment_mode.TabIndex = 226;
@@ -1300,7 +1300,7 @@
             this.luep_id.EditValue = "";
             this.luep_id.Enabled = false;
             this.luep_id.EnterMoveNextControl = true;
-            this.luep_id.Location = new System.Drawing.Point(318, 136);
+            this.luep_id.Location = new System.Drawing.Point(318, 128);
             this.luep_id.Name = "luep_id";
             this.luep_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.luep_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1323,7 +1323,7 @@
             // 
             // lbltransport_mode
             // 
-            this.lbltransport_mode.Location = new System.Drawing.Point(3, 140);
+            this.lbltransport_mode.Location = new System.Drawing.Point(3, 132);
             this.lbltransport_mode.Name = "lbltransport_mode";
             this.lbltransport_mode.Size = new System.Drawing.Size(77, 14);
             this.lbltransport_mode.TabIndex = 224;
@@ -1336,7 +1336,7 @@
             this.luesm_id.EditValue = "";
             this.luesm_id.Enabled = false;
             this.luesm_id.EnterMoveNextControl = true;
-            this.luesm_id.Location = new System.Drawing.Point(83, 136);
+            this.luesm_id.Location = new System.Drawing.Point(83, 128);
             this.luesm_id.Name = "luesm_id";
             this.luesm_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.luesm_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1361,7 +1361,7 @@
             // 
             this.txtCustomer_name.Enabled = false;
             this.txtCustomer_name.EnterMoveNextControl = true;
-            this.txtCustomer_name.Location = new System.Drawing.Point(200, 92);
+            this.txtCustomer_name.Location = new System.Drawing.Point(200, 86);
             this.txtCustomer_name.Name = "txtCustomer_name";
             this.txtCustomer_name.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtCustomer_name.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1372,7 +1372,7 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(3, 93);
+            this.label12.Location = new System.Drawing.Point(3, 87);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(78, 17);
             this.label12.TabIndex = 103;
@@ -1385,7 +1385,7 @@
             this.lueit_customer.EditValue = "";
             this.lueit_customer.Enabled = false;
             this.lueit_customer.EnterMoveNextControl = true;
-            this.lueit_customer.Location = new System.Drawing.Point(83, 92);
+            this.lueit_customer.Location = new System.Drawing.Point(83, 86);
             this.lueit_customer.Name = "lueit_customer";
             this.lueit_customer.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.lueit_customer.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1410,7 +1410,7 @@
             // 
             this.txtcd_buyer.Enabled = false;
             this.txtcd_buyer.EnterMoveNextControl = true;
-            this.txtcd_buyer.Location = new System.Drawing.Point(200, 70);
+            this.txtcd_buyer.Location = new System.Drawing.Point(200, 65);
             this.txtcd_buyer.Name = "txtcd_buyer";
             this.txtcd_buyer.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtcd_buyer.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1423,7 +1423,7 @@
             // 
             this.txttax_sum.Enabled = false;
             this.txttax_sum.EnterMoveNextControl = true;
-            this.txttax_sum.Location = new System.Drawing.Point(843, 136);
+            this.txttax_sum.Location = new System.Drawing.Point(843, 128);
             this.txttax_sum.Name = "txttax_sum";
             this.txttax_sum.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txttax_sum.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1440,7 +1440,7 @@
             this.luevendor_id.EditValue = "";
             this.luevendor_id.Enabled = false;
             this.luevendor_id.EnterMoveNextControl = true;
-            this.luevendor_id.Location = new System.Drawing.Point(83, 26);
+            this.luevendor_id.Location = new System.Drawing.Point(83, 23);
             this.luevendor_id.Name = "luevendor_id";
             this.luevendor_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luevendor_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1465,7 +1465,7 @@
             // label11
             // 
             this.label11.ForeColor = System.Drawing.Color.Blue;
-            this.label11.Location = new System.Drawing.Point(233, 6);
+            this.label11.Location = new System.Drawing.Point(233, 4);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(78, 17);
             this.label11.TabIndex = 98;
@@ -1478,7 +1478,7 @@
             this.detOrder_date.EditValue = "";
             this.detOrder_date.Enabled = false;
             this.detOrder_date.EnterMoveNextControl = true;
-            this.detOrder_date.Location = new System.Drawing.Point(318, 4);
+            this.detOrder_date.Location = new System.Drawing.Point(318, 2);
             this.detOrder_date.Name = "detOrder_date";
             this.detOrder_date.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -1500,7 +1500,7 @@
             this.luestate.EditValue = "";
             this.luestate.Enabled = false;
             this.luestate.EnterMoveNextControl = true;
-            this.luestate.Location = new System.Drawing.Point(843, 4);
+            this.luestate.Location = new System.Drawing.Point(843, 2);
             this.luestate.Name = "luestate";
             this.luestate.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.luestate.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1523,7 +1523,7 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(3, 160);
+            this.label10.Location = new System.Drawing.Point(3, 151);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(78, 17);
             this.label10.TabIndex = 95;
@@ -1535,7 +1535,7 @@
             // 
             this.txtcd_shipment.EditValue = "";
             this.txtcd_shipment.EnterMoveNextControl = true;
-            this.txtcd_shipment.Location = new System.Drawing.Point(83, 158);
+            this.txtcd_shipment.Location = new System.Drawing.Point(83, 149);
             this.txtcd_shipment.Name = "txtcd_shipment";
             this.txtcd_shipment.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtcd_shipment.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -1550,7 +1550,7 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(2, 310);
+            this.gridControl1.Location = new System.Drawing.Point(2, 293);
             this.gridControl1.MainView = this.dgvDetails;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
@@ -1564,7 +1564,7 @@
             this.clPrice,
             this.col_p_unit,
             this.clDisc_rate});
-            this.gridControl1.Size = new System.Drawing.Size(1135, 230);
+            this.gridControl1.Size = new System.Drawing.Size(1135, 258);
             this.gridControl1.TabIndex = 41;
             this.gridControl1.Tag = "2";
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -2122,7 +2122,7 @@
             // 
             // lblsanction_date
             // 
-            this.lblsanction_date.Location = new System.Drawing.Point(764, 270);
+            this.lblsanction_date.Location = new System.Drawing.Point(764, 254);
             this.lblsanction_date.Name = "lblsanction_date";
             this.lblsanction_date.Size = new System.Drawing.Size(78, 13);
             this.lblsanction_date.TabIndex = 92;
@@ -2132,7 +2132,7 @@
             // 
             // lblsanction_by
             // 
-            this.lblsanction_by.Location = new System.Drawing.Point(765, 247);
+            this.lblsanction_by.Location = new System.Drawing.Point(765, 232);
             this.lblsanction_by.Name = "lblsanction_by";
             this.lblsanction_by.Size = new System.Drawing.Size(77, 13);
             this.lblsanction_by.TabIndex = 91;
@@ -2143,7 +2143,7 @@
             // txtsanction_date
             // 
             this.txtsanction_date.Enabled = false;
-            this.txtsanction_date.Location = new System.Drawing.Point(843, 266);
+            this.txtsanction_date.Location = new System.Drawing.Point(843, 250);
             this.txtsanction_date.Name = "txtsanction_date";
             this.txtsanction_date.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtsanction_date.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2155,7 +2155,7 @@
             // txtsanction_by
             // 
             this.txtsanction_by.Enabled = false;
-            this.txtsanction_by.Location = new System.Drawing.Point(843, 244);
+            this.txtsanction_by.Location = new System.Drawing.Point(843, 229);
             this.txtsanction_by.Name = "txtsanction_by";
             this.txtsanction_by.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtsanction_by.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2166,7 +2166,7 @@
             // 
             // lblAmtim
             // 
-            this.lblAmtim.Location = new System.Drawing.Point(473, 270);
+            this.lblAmtim.Location = new System.Drawing.Point(473, 254);
             this.lblAmtim.Name = "lblAmtim";
             this.lblAmtim.Size = new System.Drawing.Size(103, 13);
             this.lblAmtim.TabIndex = 40;
@@ -2176,7 +2176,7 @@
             // 
             // lblAmusr
             // 
-            this.lblAmusr.Location = new System.Drawing.Point(473, 247);
+            this.lblAmusr.Location = new System.Drawing.Point(473, 232);
             this.lblAmusr.Name = "lblAmusr";
             this.lblAmusr.Size = new System.Drawing.Size(102, 13);
             this.lblAmusr.TabIndex = 39;
@@ -2186,7 +2186,7 @@
             // 
             // lblCrtim
             // 
-            this.lblCrtim.Location = new System.Drawing.Point(228, 291);
+            this.lblCrtim.Location = new System.Drawing.Point(228, 272);
             this.lblCrtim.Name = "lblCrtim";
             this.lblCrtim.Size = new System.Drawing.Size(85, 13);
             this.lblCrtim.TabIndex = 38;
@@ -2196,7 +2196,7 @@
             // 
             // lblCrusr
             // 
-            this.lblCrusr.Location = new System.Drawing.Point(2, 291);
+            this.lblCrusr.Location = new System.Drawing.Point(2, 272);
             this.lblCrusr.Name = "lblCrusr";
             this.lblCrusr.Size = new System.Drawing.Size(78, 13);
             this.lblCrusr.TabIndex = 37;
@@ -2207,7 +2207,7 @@
             // txtupdate_date
             // 
             this.txtupdate_date.Enabled = false;
-            this.txtupdate_date.Location = new System.Drawing.Point(578, 266);
+            this.txtupdate_date.Location = new System.Drawing.Point(578, 250);
             this.txtupdate_date.Name = "txtupdate_date";
             this.txtupdate_date.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtupdate_date.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2219,7 +2219,7 @@
             // txtupdate_by
             // 
             this.txtupdate_by.Enabled = false;
-            this.txtupdate_by.Location = new System.Drawing.Point(578, 244);
+            this.txtupdate_by.Location = new System.Drawing.Point(578, 229);
             this.txtupdate_by.Name = "txtupdate_by";
             this.txtupdate_by.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtupdate_by.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2231,7 +2231,7 @@
             // txtcreate_date
             // 
             this.txtcreate_date.Enabled = false;
-            this.txtcreate_date.Location = new System.Drawing.Point(318, 288);
+            this.txtcreate_date.Location = new System.Drawing.Point(318, 270);
             this.txtcreate_date.Name = "txtcreate_date";
             this.txtcreate_date.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtcreate_date.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2243,7 +2243,7 @@
             // txtcreate_by
             // 
             this.txtcreate_by.Enabled = false;
-            this.txtcreate_by.Location = new System.Drawing.Point(83, 288);
+            this.txtcreate_by.Location = new System.Drawing.Point(83, 270);
             this.txtcreate_by.Name = "txtcreate_by";
             this.txtcreate_by.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtcreate_by.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2254,7 +2254,7 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(3, 244);
+            this.label9.Location = new System.Drawing.Point(3, 229);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(78, 17);
             this.label9.TabIndex = 32;
@@ -2264,20 +2264,20 @@
             // 
             // txtremark
             // 
-            this.txtremark.Location = new System.Drawing.Point(83, 244);
+            this.txtremark.Location = new System.Drawing.Point(83, 229);
             this.txtremark.Name = "txtremark";
             this.txtremark.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtremark.Properties.AppearanceDisabled.Options.UseForeColor = true;
             this.txtremark.Properties.LinesCount = 3;
             this.txtremark.Properties.ReadOnly = true;
-            this.txtremark.Size = new System.Drawing.Size(369, 42);
+            this.txtremark.Size = new System.Drawing.Size(369, 40);
             this.txtremark.TabIndex = 34;
             this.txtremark.Tag = "2";
             // 
             // label8
             // 
             this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(755, 71);
+            this.label8.Location = new System.Drawing.Point(755, 66);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(86, 17);
             this.label8.TabIndex = 22;
@@ -2287,7 +2287,7 @@
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(3, 115);
+            this.label7.Location = new System.Drawing.Point(3, 108);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 17);
             this.label7.TabIndex = 21;
@@ -2298,7 +2298,7 @@
             // txts_address
             // 
             this.txts_address.EnterMoveNextControl = true;
-            this.txts_address.Location = new System.Drawing.Point(83, 114);
+            this.txts_address.Location = new System.Drawing.Point(83, 107);
             this.txts_address.Name = "txts_address";
             this.txts_address.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txts_address.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2309,7 +2309,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(3, 181);
+            this.label6.Location = new System.Drawing.Point(3, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 17);
             this.label6.TabIndex = 19;
@@ -2320,7 +2320,7 @@
             // txtpacking
             // 
             this.txtpacking.EnterMoveNextControl = true;
-            this.txtpacking.Location = new System.Drawing.Point(83, 180);
+            this.txtpacking.Location = new System.Drawing.Point(83, 170);
             this.txtpacking.Name = "txtpacking";
             this.txtpacking.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtpacking.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2331,7 +2331,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(3, 49);
+            this.label5.Location = new System.Drawing.Point(3, 45);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 17);
             this.label5.TabIndex = 17;
@@ -2343,7 +2343,7 @@
             // 
             this.txtvendor_address.EditValue = "";
             this.txtvendor_address.EnterMoveNextControl = true;
-            this.txtvendor_address.Location = new System.Drawing.Point(83, 47);
+            this.txtvendor_address.Location = new System.Drawing.Point(83, 44);
             this.txtvendor_address.Name = "txtvendor_address";
             this.txtvendor_address.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtvendor_address.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2354,7 +2354,7 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(470, 27);
+            this.label4.Location = new System.Drawing.Point(470, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 17);
             this.label4.TabIndex = 15;
@@ -2365,7 +2365,7 @@
             // txtlinkman
             // 
             this.txtlinkman.EnterMoveNextControl = true;
-            this.txtlinkman.Location = new System.Drawing.Point(578, 26);
+            this.txtlinkman.Location = new System.Drawing.Point(578, 23);
             this.txtlinkman.Name = "txtlinkman";
             this.txtlinkman.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtlinkman.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2376,7 +2376,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(757, 6);
+            this.label3.Location = new System.Drawing.Point(757, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 13;
@@ -2387,7 +2387,7 @@
             // txtVer
             // 
             this.txtVer.Enabled = false;
-            this.txtVer.Location = new System.Drawing.Point(200, 4);
+            this.txtVer.Location = new System.Drawing.Point(200, 2);
             this.txtVer.Name = "txtVer";
             this.txtVer.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtVer.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2400,7 +2400,7 @@
             this.txtVendor_name.EditValue = "";
             this.txtVendor_name.Enabled = false;
             this.txtVendor_name.EnterMoveNextControl = true;
-            this.txtVendor_name.Location = new System.Drawing.Point(200, 26);
+            this.txtVendor_name.Location = new System.Drawing.Point(200, 23);
             this.txtVendor_name.Name = "txtVendor_name";
             this.txtVendor_name.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtVendor_name.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2412,7 +2412,7 @@
             // label2
             // 
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(3, 71);
+            this.label2.Location = new System.Drawing.Point(3, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 8;
@@ -2423,7 +2423,7 @@
             // label1
             // 
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(3, 27);
+            this.label1.Location = new System.Drawing.Point(3, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 17);
             this.label1.TabIndex = 7;
@@ -2434,7 +2434,7 @@
             // lblID
             // 
             this.lblID.ForeColor = System.Drawing.Color.Blue;
-            this.lblID.Location = new System.Drawing.Point(3, 6);
+            this.lblID.Location = new System.Drawing.Point(3, 4);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(78, 17);
             this.lblID.TabIndex = 5;
@@ -2446,7 +2446,7 @@
             // 
             this.txtID.Enabled = false;
             this.txtID.EnterMoveNextControl = true;
-            this.txtID.Location = new System.Drawing.Point(83, 4);
+            this.txtID.Location = new System.Drawing.Point(83, 2);
             this.txtID.Name = "txtID";
             this.txtID.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.txtID.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2457,7 +2457,7 @@
             // lueExchange_rate
             // 
             this.lueExchange_rate.Enabled = false;
-            this.lueExchange_rate.Location = new System.Drawing.Point(843, 70);
+            this.lueExchange_rate.Location = new System.Drawing.Point(843, 65);
             this.lueExchange_rate.Name = "lueExchange_rate";
             this.lueExchange_rate.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.lueExchange_rate.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -2485,7 +2485,7 @@
             // 
             this.btebuyer_id.EditValue = "";
             this.btebuyer_id.EnterMoveNextControl = true;
-            this.btebuyer_id.Location = new System.Drawing.Point(83, 70);
+            this.btebuyer_id.Location = new System.Drawing.Point(83, 65);
             this.btebuyer_id.Name = "btebuyer_id";
             this.btebuyer_id.Properties.AppearanceDisabled.ForeColor = System.Drawing.Color.Black;
             this.btebuyer_id.Properties.AppearanceDisabled.Options.UseForeColor = true;
@@ -3000,7 +3000,6 @@
             this.BTNCARD});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             this.toolStrip1.Size = new System.Drawing.Size(1154, 38);
             this.toolStrip1.TabIndex = 24;
             this.toolStrip1.Text = "toolStrip1";
