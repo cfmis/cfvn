@@ -12,7 +12,7 @@ namespace cfvn.CLS
         private Form frm;
         private string obj_type="1";
         /// <summary>
-        /// 
+        /// 表單KeyPreview 需設置為True
         /// </summary>
         /// <param name="frm">此参數爲表單名</param>
         /// <param name="_objtype">此参數1爲VS本身的控件,2爲DEV第三方控件</param>
@@ -56,6 +56,13 @@ namespace cfvn.CLS
                 case "TextBox":
                     TextBox ts0 = (TextBox)frm.ActiveControl;
                     if ((ts0.TextLength - ts0.SelectionLength) == ts0.MaxLength - 1)
+                    {
+                        SendKeys.Send("{TAB}");
+                    }
+                    break;
+                case "ComboBox":
+                    System.Windows.Forms.ComboBox ts2 = (System.Windows.Forms.ComboBox)frm.ActiveControl;
+                    if ((ts2.Text.Length - ts2.SelectionLength) == ts2.MaxLength - 1)
                     {
                         SendKeys.Send("{TAB}");
                     }

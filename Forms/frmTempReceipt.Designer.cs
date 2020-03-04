@@ -578,7 +578,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 17);
             this.label11.TabIndex = 98;
-            this.label11.Tag = "t_order_date";
+            this.label11.Tag = "t_ir_date";
             this.label11.Text = "來料暫入庫日期";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

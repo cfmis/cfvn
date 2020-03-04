@@ -192,13 +192,14 @@ namespace cfvn.CLS
         /// </summary>
         /// <param name="pWindow_id"></param>
         /// <param name="cts"></param>
-        public void set_find_Value(string pWindow_id, Control.ControlCollection cts)
+        public int set_find_Value(string pWindow_id, Control.ControlCollection cts)
         {
             string sql_i = @"INSERT INTO sys_find_set(window_id,user_id,object_id,object_value) values(@window_id,@user_id,@object_id,@object_value)";
             string sql_u = @"Update sys_find_set SET object_value=@object_value WHERE window_id=@window_id AND user_id=@user_id AND object_id=@object_id";
             string sql_f = "";
             string strResult = "";
             string object_id, object_value;
+            int result = 0;
             foreach (Control ct in cts)
             {
                 switch (ct.GetType().Name)
@@ -274,21 +275,26 @@ namespace cfvn.CLS
                     {
                         if (string.IsNullOrEmpty(strResult))
                         {
-                            clsConErp.ExecuteNonQuery(sql_i, paras, false);
+                            result = clsConErp.ExecuteNonQuery(sql_i, paras, false);
                         }
                         else
                         {
-                            clsConErp.ExecuteNonQuery(sql_u, paras, false);
+                            result = clsConErp.ExecuteNonQuery(sql_u, paras, false);
                         }
                     }
                     catch (Exception E)
                     {
                         MessageBox.Show(E.Message);
+                        result = 0;
                         break;
                     }
                 }
             }
+            return result;
         }
+
+        
+
 
         /// <summary>
         /// 初始化查詢條件

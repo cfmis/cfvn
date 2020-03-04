@@ -195,7 +195,10 @@ namespace cfvn.CLS
                         ls_file_image = "Image\\p_ok.png";
                         Load_Image_File(tsp, ls_file_image);
                         break;
-
+                    case "BTNSAVESET":
+                        ls_file_image = "Image\\w_set.png";
+                        Load_Image_File(tsp, ls_file_image);
+                        break;                   
                     default:
                         break;
                 }
