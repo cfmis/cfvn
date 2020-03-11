@@ -22,7 +22,7 @@ namespace cfvn.Forms
        
         SqlConnection conn;
         readonly MsgInfo myMsg = new MsgInfo();//實例化Messagegox用到的提示     
-        DataTable dtCountry = new DataTable();     
+        DataTable dtDeptpartment = new DataTable();     
         public clsPublicOfVN clsApp = new clsPublicOfVN();
         private clsToolBar objToolbar;
         
@@ -44,22 +44,22 @@ namespace cfvn.Forms
         {
             //系統狀態
             clsGoodsCode.Set_DropBox_For_State(luestate, DBUtility._language);
-            string sql_country;
+            string strDept;
             if (DBUtility._language == "2")
             {
-                sql_country = @"SELECT id,english_name as name FROM dbo.bs_productline where state='0'";
+                strDept = @"SELECT id,english_name as name FROM dbo.bs_productline where state='0'";
             }
             else
             {
-                sql_country = @"SELECT id,name FROM dbo.bs_productline where state='0'";
+                strDept = @"SELECT id,name FROM dbo.bs_productline where state='0'";
             }
             //倉庫位置
-            dtCountry = clsApp.GetDataTable(sql_country);
-            DataRow row1 = dtCountry.NewRow();//插一空行
-            dtCountry.Rows.Add(row1);
-            dtCountry.DefaultView.Sort = "id ASC";//排序
-            dtCountry = dtCountry.DefaultView.ToTable();//排序後重新賦值
-            luelocation.Properties.DataSource = dtCountry;
+            dtDeptpartment = clsApp.GetDataTable(strDept);
+            DataRow row1 = dtDeptpartment.NewRow();//插一空行
+            dtDeptpartment.Rows.Add(row1);
+            dtDeptpartment.DefaultView.Sort = "id ASC";//排序
+            dtDeptpartment = dtDeptpartment.DefaultView.ToTable();//排序後重新賦值
+            luelocation.Properties.DataSource = dtDeptpartment;
             luelocation.Properties.ValueMember = "id";
             luelocation.Properties.DisplayMember = "name";
             dgvDetails.AutoGenerateColumns = false;
@@ -87,7 +87,7 @@ namespace cfvn.Forms
 
         private void frmBsDepartment_FormClosed(object sender, FormClosedEventArgs e)
         {
-            dtCountry.Dispose();
+            dtDeptpartment.Dispose();
         }
 
         private void BTNEXIT_Click(object sender, EventArgs e)

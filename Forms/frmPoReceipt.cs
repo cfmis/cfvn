@@ -12,11 +12,11 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-using WeifenLuo.WinFormsUI.Docking;
+//using WeifenLuo.WinFormsUI.Docking;
 
 namespace cfvn.Forms
 {
-    public partial class frmTempReceipt : DockContent
+    public partial class frmPoReceipt : Form
     {
         
         public string m_id = "";    //臨時的主鍵值       
@@ -43,7 +43,7 @@ namespace cfvn.Forms
         clsToolBar objToolbar;
 
        
-        public frmTempReceipt()
+        public frmPoReceipt()
         {
             InitializeComponent();
             clsTranslate obj_ctl = new clsTranslate( this.Controls, DBUtility._language);
@@ -55,7 +55,7 @@ namespace cfvn.Forms
             objToolbar.Set_Button_Image(toolStrip1);
         }
 
-        private void frmTempReceipt_Load(object sender, EventArgs e)
+        private void frmPoReceipt_Load(object sender, EventArgs e)
         {
             //狀態
             clsGoodsCode.Set_DropBox_For_State(luestate, DBUtility._language);
@@ -128,7 +128,7 @@ namespace cfvn.Forms
 
         }
 
-        private void frmTempReceipt_FormClosed(object sender, FormClosedEventArgs e)
+        private void frmPoReceipt_FormClosed(object sender, FormClosedEventArgs e)
         {
             //
         }
@@ -969,7 +969,7 @@ namespace cfvn.Forms
             {
                 dgvDetails.CloseEditor();//使輸入或更改有效
             }
-            using (frmTempReceiptEdit ofrm = new frmTempReceiptEdit(this, m_state, txtID.Text, lueseparate.EditValue.ToString()))
+            using (frmPoReceiptEdit ofrm = new frmPoReceiptEdit(this, m_state, txtID.Text, lueseparate.EditValue.ToString()))
             {
                 ofrm.ShowDialog();
             }

@@ -376,6 +376,12 @@
     <Compile Include="Forms\frmBsShippingMode.designer.cs">
       <DependentUpon>frmBsShippingMode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmBsStockLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBsStockLocation.designer.cs">
+      <DependentUpon>frmBsStockLocation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmBsTackFare.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -543,6 +549,18 @@
     </Compile>
     <Compile Include="Forms\frmPoPurchaseBillEmp.Designer.cs">
       <DependentUpon>frmPoPurchaseBillEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPoReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPoReceipt.Designer.cs">
+      <DependentUpon>frmPoReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPoReceiptEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPoReceiptEdit.Designer.cs">
+      <DependentUpon>frmPoReceiptEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmProductType.cs">
       <SubType>Form</SubType>
@@ -766,6 +784,9 @@
     <EmbeddedResource Include="Forms\frmBsShippingMode.resx">
       <DependentUpon>frmBsShippingMode.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBsStockLocation.resx">
+      <DependentUpon>frmBsStockLocation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmBsTackFare.resx">
       <DependentUpon>frmBsTackFare.cs</DependentUpon>
     </EmbeddedResource>
@@ -849,6 +870,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmPoPurchaseBillEmp.resx">
       <DependentUpon>frmPoPurchaseBillEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPoReceipt.resx">
+      <DependentUpon>frmPoReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPoReceiptEdit.resx">
+      <DependentUpon>frmPoReceiptEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmProductType.resx">
       <DependentUpon>frmProductType.cs</DependentUpon>

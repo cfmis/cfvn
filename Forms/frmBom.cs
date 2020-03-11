@@ -297,7 +297,7 @@ namespace cfvn.Forms
 			{
 				preNode.ForeColor = System.Drawing.Color.Black;
 			}
-			e.Node.ForeColor = System.Drawing.Color.Maroon;
+			e.Node.ForeColor = System.Drawing.Color.Maroon;            
 			preNode = e.Node;
 			TreeView1.TopNode.ForeColor = System.Drawing.Color.Black;
 		}
